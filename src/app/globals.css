@@ -49,8 +49,12 @@ body {
 }
 
 @keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
   to {
-    transform: translateX(50%);
+    transform: translateX(0);
   }
 }
+
 
