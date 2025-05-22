@@ -17,48 +17,8 @@
       useDisclosure,
     } from '@nextui-org/react';
 
-    type ExperienceItem = {
-      url: string;
-      company: string;
-      position: string;
-      cardImg: string;
-      location: string;
-      date: string;
-      bulletPoints: string[];
-      modalImgs: string[];
-    };
+    import { experienceList, frameworks, tools, ExperienceItem } from './data';
 
-    const frameworks = [
-      "C++",
-      "C#",
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "Dart",
-      "SQL",
-      "Java",
-      "Python",
-      "Ruby",
-      "Flutter",
-      "Firebase",
-      "MATLab",
-      "AWS",
-      "MEAN",
-    ];
-
-    const tools = [
-      "Visual Studio",
-      "Visual Studio Code",
-      "MySQL Workbench",
-      "QT Creator",
-      "CLion",
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Jira",
-      "Zendesk",
-      "CMake",
-    ];
 
     export default function ExperiencePage() {
       const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -85,60 +45,12 @@
         onOpen();
       };
 
-      const list: ExperienceItem[] = [
-        {
-          url: '#',
-          company: 'CIMON Automation',
-          position: 'Software Engineer - Gateway',
-          cardImg: '/exp/cimon-logo.png',
-          location: 'Henderson, NV',
-          date: 'Jan 2025 - Present',
-          bulletPoints: [
-            'Developing communication protocols for CIMON HMI devices.',
-            'Created a Project Creator tool to automate test project generation.',
-            'Implemented Single Write Functionality for Modbus.',
-            'Utilized C++, Python, CMake, and CLion for development.',
-          ],
-          modalImgs: [],
-        },
-        {
-          url: '#',
-          company: 'CIMON Automation',
-          position: 'Software Engineer (Temporary)',
-          cardImg: '/exp/cimon-logo.png',
-          location: 'Henderson, NV',
-          date: 'Jan 2024 – May 2024',
-          bulletPoints: [
-            'Developed a tool to automate project file handling.',
-            'Improved workflow efficiency and reduced manual steps.',
-            'Utilized C++ and QT Creator for development.',
-          ],
-          modalImgs: [],
-        },
-        {
-          url: '#',
-          company: 'CIMON Automation',
-          position: 'Support Engineer II',
-          cardImg: '/exp/cimon-logo.png',
-          location: 'Henderson, NV',
-          date: 'July 2023 – Jan 2025',
-          bulletPoints: [
-            'Achieved 100% customer satisfaction on Zendesk.',
-            'Diagnosed and resolved technical issues.',
-            'Authored technical documentation for CIMON systems.',
-            'Provided on-site troubleshooting.',
-            'Utilized JavaScript for scripting.',
-          ],
-          modalImgs: [],
-        },
-      ];
-
       return (
         <main className="p-8 mx-auto max-w-6xl text-white">
           <h1 className="text-3xl font-bold mb-8">Experience</h1>
 
           <div className="grid gap-8 md:grid-cols-2">
-            {list.map((item, index) => (
+            {experienceList.map((item, index) => (
               <Card key={index} className="w-full bg-zinc-900 text-white">
                 <CardHeader className="flex flex-col items-start gap-1 p-4">
                   <h3 className="text-lg font-semibold">{item.position}</h3>
