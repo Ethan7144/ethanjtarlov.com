@@ -24,3 +24,33 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.scroller {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  animation: scroll var(--scroll-speed, 30s) linear infinite;
+}
+
+.scroller__inner {
+  display: inline-flex;
+  gap: 2rem;
+}
+
+.scroller li {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  opacity: 0.7;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
