@@ -11,7 +11,7 @@ import {
   Image,
 } from '@nextui-org/react';
 
-import { experienceList, frameworks, tools, ExperienceItem } from './data';
+import { experienceList, frameworks, tools } from './data';
 
 export default function ExperiencePage() {
   const [currentItem, setCurrentItem] = useState<number | null>(null);
