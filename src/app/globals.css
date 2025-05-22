@@ -33,24 +33,24 @@ body {
 }
 
 .scroller[data-animated="true"] .scroller__inner {
-  animation: scroll var(--scroll-speed, 30s) linear infinite;
-}
-
-.scroller__inner {
   display: inline-flex;
   gap: 2rem;
+  animation: scroll-left 40s linear infinite;
 }
 
-.scroller li {
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.875rem;
-  white-space: nowrap;
-  opacity: 0.7;
+.scroller[data-direction="right"][data-animated="true"] .scroller__inner {
+  animation-name: scroll-right;
 }
 
-@keyframes scroll {
+@keyframes scroll-left {
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  to {
+    transform: translateX(50%);
   }
 }
 
