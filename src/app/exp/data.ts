@@ -28,7 +28,7 @@ export const experienceList: ExperienceItem[] = [
         {
           url: '#',
           company: 'CIMON Automation',
-          position: 'Software Engineer (Temporary)',
+          position: 'Software Engineer',
           cardImg: '/exp/cimon-logo.png',
           location: 'Henderson, NV',
           date: 'Jan 2024 – May 2024',
@@ -55,6 +55,22 @@ export const experienceList: ExperienceItem[] = [
           ],
           modalImgs: [],
         },
+         {
+        url: '#',
+        company: 'Boeing',
+        position: 'Software Engineer Intern',
+        cardImg: '/exp/boeing-logo.png',
+        location: 'Seattle, WA',
+        date: 'Sep 2022 – Jun 2023',
+        bulletPoints: [
+          'Developed an app prototype to detect if a mechanic was incapacitated.',
+          'Added fall detection by analyzing changes in orientation and acceleration.',
+          'Used Firebase for authentication, notifications, and cloud data storage.',
+          'Served as Project Manager in Fall 2022; transitioned to DevOps role in Winter.',
+          'Utilized Flutter, Dart, and Firebase for development.',
+        ],
+        modalImgs: [],
+      },
 ];
 
 export const embeddedSkills = [

@@ -7,9 +7,9 @@ import {
   CardBody,
   CardFooter,
   Divider,
-  Button,
-  Image,
+  Button
 } from '@nextui-org/react';
+import Image from 'next/image';
 
 import { experienceList, embeddedSkills, devLanguages, devTools } from './data';
 
