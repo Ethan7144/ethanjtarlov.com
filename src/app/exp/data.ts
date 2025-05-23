@@ -57,34 +57,24 @@ export const experienceList: ExperienceItem[] = [
         },
 ];
 
-export const frameworks = [
-      "C++",
-      "C#",
-      "HTML",
-      "JavaScript",
-      "CSS",
-      "Dart",
-      "SQL",
-      "Java",
-      "Python",
-      "Ruby",
-      "Flutter",
-      "Firebase",
-      "MATLab",
-      "AWS",
-      "MEAN",
+export const embeddedSkills = [
+  "Embedded C++",
+  "Embedded Linux",
+  "Device Drivers",
+  "RTOS",
+  "Low-Level Programming",
+  "Protocol Development",
+  "Serial Communication",
+  "Multithreading",
+  "Memory Management",
+  "Network Protocols",
 ];
 
-export const tools = [
-      "Visual Studio",
-      "Visual Studio Code",
-      "MySQL Workbench",
-      "QT Creator",
-      "CLion",
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Jira",
-      "Zendesk",
-      "CMake",
+export const devLanguages = [
+  "C++", "C#", "Python", "Java", "Dart", "JavaScript", "SQL", "Ruby", "HTML", "CSS", "Flutter", "Firebase", "MATLab", "AWS", "MEAN",
+];
+
+export const devTools = [
+  "Visual Studio", "Visual Studio Code", "QT Creator", "CLion", "CMake",
+  "Git", "GitHub", "GitLab", "Jira", "MySQL Workbench"
 ];
