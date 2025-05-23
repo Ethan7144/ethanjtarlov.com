@@ -11,7 +11,7 @@ import {
   Image,
 } from '@nextui-org/react';
 
-import { experienceList, frameworks, tools } from './data';
+import { experienceList, embeddedSkills, devLanguages, devTools } from './data';
 
 export default function ExperiencePage() {
   const [currentItem, setCurrentItem] = useState<number | null>(null);
@@ -90,23 +90,29 @@ export default function ExperiencePage() {
         ))}
       </div>
 
-      <h1 className="text-2xl font-bold mt-16 mb-4">Languages / Frameworks / Technologies</h1>
-      <div className="scroller" data-direction="left" data-speed="slow">
-        <ul className="tag-list scroller__inner">
-          {frameworks.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-      </div>
+      <h1 className="text-2xl font-bold mt-16 mb-4">Technical Skills</h1>
 
-      <h1 className="text-2xl font-bold mt-12 mb-4">Tools</h1>
-      <div className="scroller" data-direction="right" data-speed="slow">
-        <ul className="tag-list scroller__inner">
-          {tools.map((item, idx) => (
-            <li key={idx}>{item}</li>
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            { title: 'Embedded / Systems Skills', items: embeddedSkills },
+            { title: 'Languages & Frameworks', items: devLanguages },
+            { title: 'Tools & Platforms', items: devTools },
+          ].map((section, idx) => (
+            <div
+              key={idx}
+              className="relative group bg-zinc-900 p-4 rounded-md hover:bg-zinc-800 transition duration-300"
+            >
+              <h2 className="text-lg font-semibold text-white mb-2">{section.title}</h2>
+              <div className="absolute z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-zinc-800 p-4 rounded-md shadow-md w-full mt-2 left-0">
+                <ul className="space-y-1 text-sm text-gray-300">
+                  {section.items.map((item, i) => (
+                    <li key={i}>• {item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           ))}
-        </ul>
-      </div>
+        </div>
     </main>
   );
 }
