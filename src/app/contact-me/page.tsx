@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function ContactsPage() {
   return (
-    <div className="min-h-screen px-6 py-12 bg-[var(--background)] text-[var(--foreground)]">
+    <div className="min-h-screen font-mono px-6 py-12 bg-[var(--background)] text-[var(--foreground)]">
       <Head>
         <title>Contact | Ethan Tarlov</title>
         <meta name="description" content="Reach out to Ethan Tarlov" />

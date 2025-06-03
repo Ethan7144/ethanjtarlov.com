@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 export default function SocialsPage() {
   return (
-    <div className="min-h-screen px-6 py-12 bg-[var(--background)] text-[var(--foreground)]">
+    <div className="min-h-screen font-mono px-6 py-12 bg-[var(--background)] text-[var(--foreground)]">
       <Head>
         <title>Socials | Ethan Tarlov</title>
         <meta name="description" content="Follow Ethan Tarlov on social platforms" />
