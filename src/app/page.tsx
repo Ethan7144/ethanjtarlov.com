@@ -14,17 +14,16 @@ export default function HomePage() {
       </h1>
 
       <p className="text-center text-lg font-mono">
-        Software Engineer | SU Comp Sci 23&apos; | San Diego ⇌ Las Vegas
+        Software Engineer | SU Comp Sci 23&apos; | San Diego ⇌ Irvine
       </p>
       <hr className="my-10 border-[var(--foreground)] opacity-20 w-1/2"/>
           <section className="max-w-xl text-center text-md font-sans leading-relaxed">
             <p className="mb-4 font-mono">
-              Hello there! My name is Ethan, and I am currently a Software Engineer on the Gateway team at <strong>CIMON Automation</strong>.
-              I work on enabling communication between industrial devices and our HMI application, Canvas.
+              Hello there! My name is Ethan, and I am currently an Embedded Software Engineer on the Home Network Team at <strong>TP-Link</strong>.
+              I currently am working on the Deco Mesh Wi-Fi system, where I focus on developing and optimizing the software that powers our mesh Wi-Fi products.
             </p>
             <p className="mb-4 font-mono">
-              My team implements and maintains protocol support (like Modbus), sends and receives frame data, and ensures it integrates
-              seamlessly into the runtime environment.
+              My team works on some of TP-Link&apos;s most popular products, including the Deco Mesh Wi-Fi system, doorbells, and security cameras.
             </p>
           </section>
     </div>
