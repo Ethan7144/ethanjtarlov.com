@@ -12,11 +12,26 @@ type ExperienceItem = {
 export const experienceList: ExperienceItem[] = [
         {
           url: '#',
+          company: 'TP-Link Systems',
+          position: 'Embedded Software Engineer',
+          cardImg: '/exp/TP-Link-logo.png',
+          location: 'Irvine, CA',
+          date: 'Mar 2026 - Present',
+          bulletPoints: [
+            'Developing and optimizing software for the Deco Mesh Wi-Fi system.',
+            'Collaborating with cross-functional teams to design and implement new features.',
+            'Debugging and troubleshooting software issues in embedded environments.',
+            'Utilizing C and embedded Linux for development.',
+          ],
+          modalImgs: [],
+        },
+        {
+          url: '#',
           company: 'CIMON Automation',
           position: 'Software Engineer - Gateway',
           cardImg: '/exp/cimon-logo.png',
           location: 'Henderson, NV',
-          date: 'Jan 2025 - Present',
+          date: 'Jan 2025 - Oct 2025',
           bulletPoints: [
             'Developing communication protocols for CIMON HMI devices.',
             'Created a Project Creator tool to automate test project generation.',
