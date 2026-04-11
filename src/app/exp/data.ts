@@ -14,7 +14,7 @@ export const experienceList: ExperienceItem[] = [
           url: '#',
           company: 'TP-Link Systems',
           position: 'Embedded Software Engineer',
-          cardImg: '/exp/TP-Link-logo.png',
+          cardImg: '/exp/TP-Link-Logo.png',
           location: 'Irvine, CA',
           date: 'Mar 2026 - Present',
           bulletPoints: [
